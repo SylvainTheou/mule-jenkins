@@ -10,8 +10,8 @@ pipeline {
             steps{
                 echo "Configuration setup..."
                 script{
-                    env = config.get("envConfig")
-                    config = readJSON file:"env/${env.BRANCH_NAME}/config.json"                    
+                    config = readJSON file:"env/${env.BRANCH_NAME}/config.json"   
+                    env = config.get("envConfig")                 
                 }
             }
     }
