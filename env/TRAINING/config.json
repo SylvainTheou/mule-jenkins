@@ -2,6 +2,7 @@
   "envConfig": {
     "envName": "Training",
     "muleVersion": "4.6.1",
-    "cloudhubAppName": "mule-jenkins-api-training"
+    "cloudhubAppName": "mule-jenkins-api-training",
+    "BRANCH_NAME": "TRAINING"
   }
 }

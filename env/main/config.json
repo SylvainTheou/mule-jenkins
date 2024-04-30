@@ -2,6 +2,7 @@
   "envConfig": {
     "envName": "Sandbox",
     "muleVersion": "4.6.1",
-    "cloudhubAppName": "mule-jenkins-api"
+    "cloudhubAppName": "mule-jenkins-api",
+    "BRANCH_NAME": "main"
   }
 }
