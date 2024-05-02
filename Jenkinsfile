@@ -25,7 +25,7 @@ pipeline {
         ANYPOINT_CREDENTIALS = credentials('4bef4326-e5a1-490c-ae9b-307e0ed1011e')
       }
       steps {
-        sh "mvn clean deploy -DmuleDeploy -Dcloud.env=${env.envName} -DcloudhubAppName=${env.cloudhubAppName} -Dmule.version=${env.muleVersion} -Dcloud.user=${ANYPOINT_CREDENTIALS_USR} -Dcloud.password=${ANYPOINT_CREDENTIALS_PSW}"
+        sh "mvn deploy -DmuleDeploy -Dworkers=1 -Dworker.type=Micro -Dcloud.env=${env.envName} -DcloudhubAppName=${env.cloudhubAppName} -Dmule.version=${env.muleVersion} -Dcloud.user=${ANYPOINT_CREDENTIALS_USR} -Dcloud.password=${ANYPOINT_CREDENTIALS_PSW}"
       }
     }
   }

@@ -35,8 +35,11 @@
 						<muleVersion>${mule.version}</muleVersion>
 						<username>${cloud.user}</username>
 						<password>${cloud.password}</password>
-						<applicationName>${cloudhubAppName} -${maven.build.timestamp}</applicationName>
+						<applicationName>${cloudhubAppName}</applicationName>
 						<environment>${cloud.env}</environment>
+						<workers>${workers}</workers>
+						<workerType>${worker.type}</workerType>
+						<objectStoreV2>true</objectStoreV2> 
 						<properties>
 							<key>value</key>
 						</properties>
